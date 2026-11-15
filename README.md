@@ -96,4 +96,4 @@ Experimental ECG models retain their failed or unavailable gates; they are not p
 
 Original project code and documentation are offered under the [MIT license](LICENSE). Third-party data, dependencies and runtime components retain their own licenses; see [DATA_SOURCES.md](DATA_SOURCES.md) and included notices. NASA, dataset authors and dependency authors do not endorse this project.
 
-AI-assisted implementation, tests, writing and synthetic fixtures are disclosed in [AI_USE.md](AI_USE.md) and machine-readable [AI_USAGE.json](AI_USAGE.json). The presentation's generated illustration is visibly labeled. The declaration also belongs in the official Space Apps submission form.
+AI-assisted implementation, tests, writing and synthetic fixtures are disclosed in [SI_USE.md](AI_USE.md) and machine-readable [SI_USAGE.json](AI_USAGE.json). The presentation's generated illustration is visibly labeled. The declaration also belongs in the official Space Apps submission form.
