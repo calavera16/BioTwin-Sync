@@ -2,7 +2,7 @@
 
 The **research companion** preserves the older native Windows interface with the NASA ECG fitted-model demonstration and historical-reference controls. Use the V11 app for the current main experience. Use this separate interface to inspect capabilities that have not been ported to React.
 
-Download **BioTwinSync-0.1.0-windows-x64-research-companion.zip** from [Releases](https://github.com/calavera16/BioTwin-Sync/releases) when the asset is published. Extract the whole ZIP into its own folder, open **BioTwinSync**, then run **BioTwinSync.exe**. Python and Tk are included; no installation, account or key is needed. The portable prototype is unsigned. If the asset is not yet listed, the same native tools are available from source with `python run_desktop.py` (Python 3.13 with Tk).
+Download **[BioTwinSync-0.1.0-windows-x64-research-companion.zip](https://github.com/calavera16/BioTwin-Sync/releases/download/v0.1.0/BioTwinSync-0.1.0-windows-x64-research-companion.zip)**. Extract the whole ZIP into its own folder, open **BioTwinSync**, then run **BioTwinSync.exe**. Python and Tk are included; no installation, account or key is needed. The portable prototype is unsigned. The same native tools are also available from source with `python run_desktop.py` (Python 3.13 with Tk).
 
 ## Try actual NASA ECG model inference
 

@@ -4,11 +4,11 @@
 
 The repository contains three layers of completed work. This tour separates the current app, the existing native research tools and the scientific experiments so each can be judged on its actual behavior.
 
-[Source launch](../README.md#run-the-current-interface-from-source) · [Release assets when uploaded](https://github.com/calavera16/BioTwin-Sync/releases) · [Seven-slide presentation](BioTwin-Sync-Submission.pdf) · [Evidence and reproduction](evidence/README.md) · [Source attribution](../DATA_SOURCES.md)
+[Source launch](../README.md#run-the-current-interface-from-source) · [Download release v0.1.0](https://github.com/calavera16/BioTwin-Sync/releases/tag/v0.1.0) · [Seven-slide presentation](BioTwin-Sync-Submission.pdf) · [Evidence and reproduction](evidence/README.md) · [Source attribution](../DATA_SOURCES.md)
 
 ## 1. Current app: collect, review and follow up (about 1 minute)
 
-The current interface [runs directly from this repository](../README.md#run-the-current-interface-from-source). Portable assets are prepared for upload to Releases. When available, download **BioTwinSync-0.1.0-windows-x64-v11-submission.zip**, extract the entire ZIP, open its **BioTwinSync** folder and run **BioTwinSync.exe**. The unsigned Windows x64 portable app includes Chromium and Python. Its packaged local demonstration needs no login, key, development tools or network connection.
+Download **[BioTwinSync-0.1.0-windows-x64-v11-submission.zip](https://github.com/calavera16/BioTwin-Sync/releases/download/v0.1.0/BioTwinSync-0.1.0-windows-x64-v11-submission.zip)**, extract the entire ZIP, open its **BioTwinSync** folder and run **BioTwinSync.exe**. The unsigned Windows x64 portable app includes Chromium and Python. Its packaged local demonstration needs no login, key, development tools or network connection. The current interface also [runs directly from this repository](../README.md#run-the-current-interface-from-source).
 
 Start with **Watch 30-second example**, then **View example checks**. A clinician reviews a synthetic 420 ms reaction-time observation while the crew later records 585 ms. On reply receipt, the real local evaluator uses the latest compatible evidence to choose an authored branch. The same 585 ms reading becomes UNKNOWN when too old. These illustrative values, thresholds and simulated delays are workflow fixtures, separate from NASA recordings.
 
@@ -29,7 +29,7 @@ The assistant is a rules-based, source-grounded support workflow. The ECG machin
 
 ## 2. Existing native research tools (about 1 minute)
 
-The simplest packaged route is the optional **BioTwinSync-0.1.0-windows-x64-research-companion.zip**, when uploaded to [Releases](https://github.com/calavera16/BioTwin-Sync/releases). This preserves the older native interface and includes its runtime, so no Python installation is needed. See [companion extraction and startup details](RESEARCH-COMPANION.md).
+Download the optional **[BioTwinSync-0.1.0-windows-x64-research-companion.zip](https://github.com/calavera16/BioTwin-Sync/releases/download/v0.1.0/BioTwinSync-0.1.0-windows-x64-research-companion.zip)**. This preserves the older native interface and includes its runtime, so no Python installation is needed. See [companion extraction and startup details](RESEARCH-COMPANION.md).
 
 This is a **separate older interface**, not the primary current React app. It exposes the existing NASA trained-model demonstration and historical reference tools; it does not add a GUI for the ECG count-reliability or evidence-link benchmarks. As a source fallback, with Python 3.13 and Tk available, run from the repository root:
 
@@ -114,10 +114,10 @@ The architecture is React inside Electron/Chromium with a packaged Python backen
 | Authored onboard support | [Assistant](../biotwin/health_assistant.py), [protocol content](../assets/desktop/assistant-protocols-v1.json) |
 | Delayed consultation and conditional instructions | [Workflow](../biotwin/workflow.py), [protocol evaluator](../biotwin/protocol.py), [transport](../biotwin/transport.py) |
 | Scientific extensions | [Count reliability](../biotwin/ecg_reliability.py), [evidence priority](../biotwin/evidence_priority.py), [benchmark scripts](../scripts) |
-| Verification and provenance | [Tests](../tests), [release verification](VERIFICATION.md), [data sources/licenses](../DATA_SOURCES.md), [AI disclosure](../AI_USE.md) |
+| Verification and provenance | [Tests](../tests), [release verification](VERIFICATION.md), [data sources/licenses](../DATA_SOURCES.md), [AI disclosure](../SI_USE.md) |
 
 ## What remains to validate
 
 This hackathon prototype has no clinical validation or flight approval. Manual inputs are supplied observations, and browser reaction timing is uncalibrated. No live sensor integration, disease diagnosis, prescribing or demonstrated clinical outcome benefit is claimed. Session exports are unencrypted. The next scientific steps are timestamp-aware NASA input handling, a usable prespecified rules comparator and fresh evaluation with error **and** retained coverage; the next product checks are another Windows computer and unfamiliar-user testing.
 
-NASA's research motivates the application and supplies genuine inspectable source data. It does not endorse BioTwin or validate its models. [Attribution and licenses](../DATA_SOURCES.md) and [AI-assisted work disclosure](../AI_USE.md) apply throughout.
+NASA's research motivates the application and supplies genuine inspectable source data. It does not endorse BioTwin or validate its models. [Attribution and licenses](../DATA_SOURCES.md) and [AI-assisted work disclosure](../SI_USE.md) apply throughout.
