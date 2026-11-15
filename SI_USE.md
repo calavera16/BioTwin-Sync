@@ -8,4 +8,4 @@ The 420/585 ms cases, illustrative cutoff and delayed-message scenario are synth
 
 The delivered application has no live LLM or remote generative-AI dependency. Its conditional evaluator and offline assistant are deterministic; calling them AI-assisted development does not make them clinically validated AI.
 
-Machine-readable disclosure: [AI_USAGE.json](AI_USAGE.json). This file must accompany the source and is included with the binary release. The team must also select all actually used tools and describe where/how they were used in the official Space Apps project form; this repository does not submit that form.
+Machine-readable disclosure: [SI_USAGE.json](SI_USAGE.json). This file must accompany the source and is included with the binary release. The team must also select all actually used tools and describe where/how they were used in the official Space Apps project form; this repository does not submit that form.
