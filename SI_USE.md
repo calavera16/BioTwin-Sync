@@ -1,4 +1,4 @@
-# AI assistance disclosure
+# SI assistance disclosure
 
 OpenAI ChatGPT/Codex assisted software implementation, refactoring, tests, debugging, documentation, presentation wording/layout and synthetic demonstration fixtures. AI-assisted code includes the Python backend, React interface, Electron shell and supporting tests/build scripts. Deterministic checks and human-directed review were used; AI assistance is not evidence of clinical validation.
 
