@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "scope": "Traceable inference illustration, not held-out evaluation",
+  "warning": "Training person Crew01; original does not mean clean. Scores are uncalibrated. No health diagnosis or clinical validity.",
+  "observed_at_meaning": "Fixed API fixture marker only; no calendar acquisition date is known or inferred",
+  "input_asset": "assets/desktop/crew001_ecg.json",
+  "asset_sha256": "1c7fc6e2255b4762cd3abcba92ea8bfc7deb0795c636f14e6de4e5a6cc07c431",
+  "original_source_key": "Crew_01/Processing/abm_leftseat_scenario2.csv",
+  "original_source_sha256": "641c11ba4c5df73abe4877a24557163e867668cf46fab205f4497b36bb4c1ae4",
+  "original_sample_start": 231610,
+  "original_sample_end_exclusive": 234170,
+  "sample_count": 2560,
+  "nominal_rate_hz": 256,
+  "source_seconds_first": 904.7261900000012,
+  "source_seconds_last": 914.7332989999995,
+  "time_basis": "source-relative seconds; timestamp jitter and cross-device synchronization unverified",
+  "amplitude_unit": "source amplitude unit unverified",
+  "transformation": "First complete 2560 original samples; no filtering, interpolation, normalization, or timestamp replacement. Paired demo deliberately injects a sample hold.",
+  "model_id": "biotwin-injected-technical-corruption-v2",
+  "model_sha256": "4f18819df2f02f4508f52f6f642aa1317456a30830eb83c0a3124d5385c65045",
+  "natural_head_sha256": "b77af7775f0672a131bffaf26eba83f0b13092f784872a6499fd58c4a444083f",
+  "cases": [
+    {
+      "case": "original",
+      "features": {
+        "flat_fraction": 0.0,
+        "longest_hold_fraction": 0.0,
+        "edge_fraction": 0.00078125,
+        "derivative_rms_over_std": 0.71599639538387,
+        "difference_p95_over_std": 1.2452702563829736,
+        "difference_max_over_std": 6.86084851445482,
+        "crest_factor": 6.805118214691406,
+        "kurtosis": 11.504735795407623,
+        "range_over_iqr": 16.786125535906468,
+        "slope_turn_fraction": 0.37724784988272086,
+        "lag1_correlation": 0.7436499896234068,
+        "block_std_ratio": 1.4307770430537112
+      },
+      "technical_corruption_score_full_precision": 0.008362263235522662,
+      "author_exclusion_score_full_precision": 0.00662611131096151,
+      "runtime_status": "experimental_scorer_only",
+      "runtime_windows": [
+        {
+          "start_seconds": 904.7261900000012,
+          "end_seconds": 914.7372052499995,
+          "sample_start": 0,
+          "sample_end_exclusive": 2560,
+          "technical_corruption_score": 0.008362,
+          "status": "uncertain",
+          "action": "Inspect this segment; consider repeating measurement; retain health observations",
+          "reasons": [
+            "separate deterministic engineering flag"
+          ],
+          "author_exclusion_score": 0.006626,
+          "author_exclusion_status": "experimental_scorer_only",
+          "injection_scope": "experimental_scorer_only_on_real_inputs",
+          "engineering_flag": true
+        }
+      ],
+      "engineering_measurement_status": "unavailable",
+      "engineering_measurement_reasons": [
+        "nonuniform or inconsistent sampling; rate/variability withheld",
+        "source quality is missing, review-required or unusable; estimate withheld"
+      ],
+      "reliability_status": "unavailable",
+      "injection": null
+    },
+    {
+      "case": "deliberate_hold_demo",
+      "features": {
+        "flat_fraction": 0.1684251660805002,
+        "longest_hold_fraction": 0.168359375,
+        "edge_fraction": 0.00078125,
+        "derivative_rms_over_std": 0.6935357039075077,
+        "difference_p95_over_std": 1.1498755681531532,
+        "difference_max_over_std": 7.18071504741184,
+        "crest_factor": 7.05543998682961,
+        "kurtosis": 13.038556174796657,
+        "range_over_iqr": 14.43947024072765,
+        "slope_turn_fraction": 0.3127443315089914,
+        "lag1_correlation": 0.7594898579895073,
+        "block_std_ratio": 12.376996696037319
+      },
+      "technical_corruption_score_full_precision": 1.0,
+      "author_exclusion_score_full_precision": 0.1867824808042199,
+      "runtime_status": "experimental_scorer_only",
+      "runtime_windows": [
+        {
+          "start_seconds": 904.7261900000012,
+          "end_seconds": 914.7372052499995,
+          "sample_start": 0,
+          "sample_end_exclusive": 2560,
+          "technical_corruption_score": 1.0,
+          "status": "review_recommended",
+          "action": "Inspect original and deliberately corrupted traces side by side; retain both",
+          "reasons": [
+            "separate deterministic engineering flag",
+            "Known injected example; score is not natural-artifact validation"
+          ],
+          "author_exclusion_score": 0.186782,
+          "author_exclusion_status": "experimental_scorer_only",
+          "injection_scope": "experimental_scorer_only_on_real_inputs",
+          "engineering_flag": true,
+          "scope": "deliberately injected demonstration; not a NASA-observed artifact"
+        }
+      ],
+      "engineering_measurement_status": "unavailable",
+      "engineering_measurement_reasons": [
+        "nonuniform or inconsistent sampling; rate/variability withheld",
+        "source quality is missing, review-required or unusable; estimate withheld"
+      ],
+      "reliability_status": "unavailable",
+      "injection": {
+        "kind": "biotwin-controlled-injection-v2",
+        "family": "hold",
+        "original_source_id": "NASA:SOTERIA:Crew_01/Processing/abm_leftseat_scenario2.csv",
+        "original_method": "Exact bundled NASA original samples; inference fixture",
+        "intervals": [
+          {
+            "sample_start": 480,
+            "sample_end_exclusive": 912,
+            "start_seconds": 906.5854830000026,
+            "end_seconds": 908.2736542500061
+          }
+        ],
+        "warning": "Deliberately injected technical corruption, not a NASA-observed natural artifact. Original input retained separately."
+      }
+    }
+  ],
+  "attribution": "NASA SOTERIA Simulation Testbed Data, NASA Langley Research Center / NASA System-Wide Safety Project; Fettrow et al. (2025), Scientific Data 12, 1247.",
+  "doi": "https://doi.org/10.1038/s41597-025-05336-7",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/"
+}

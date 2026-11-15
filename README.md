@@ -1,20 +1,34 @@
 # BioTwin Sync
 
-**Earth's reply can arrive after the evidence has changed. BioTwin checks the reply against what the crew knows now.**
+**Record health evidence onboard. Inspect its quality and personal history. Keep delayed advice tied to the evidence that still applies.**
 
-An offline Windows prototype for the NASA Space Apps 2026 **Health Monitoring Software** challenge. A crew records evidence, sends it through a simulated delay, and receives human-authored conditional instructions. The local evaluator checks those instructions against the latest compatible onboard evidence; stale or missing evidence produces UNKNOWN and withholds the conditional actions.
+BioTwin Sync is an offline Windows health-monitoring research prototype for the NASA Space Apps 2026 **Health Monitoring Software** challenge. It combines local measurement capture, NASA physiological-recording analysis, personal reference/history tools, source-linked onboard support, and a simulated crew–Earth consultation workflow. When Earth's reply arrives after the evidence has changed, a local evaluator checks the human-authored instructions against the latest compatible onboard evidence.
+
+**For judges: [take the 3–5 minute technical tour](docs/JUDGES.md)** · [Inspect research evidence and results](docs/evidence/README.md) · [Browse the Python backend](biotwin) · [Browse the React interface](ui/presentation/src) · [Seven-slide presentation](docs/BioTwin-Sync-Submission.pdf)
+
+| Existing work | Where to inspect it |
+| --- | --- |
+| Current app: manual/imported measurements, reaction check, history, recording inspection, assistant, delayed consultation and explicit follow-up | [Run from source](#run-the-current-interface-from-source), [desktop guide](docs/unified-desktop-guide.md) |
+| Separate native research interface: NASA ECG model demo, controlled corruption, real fitted-model inference/report export and NASA historical reference library | [Optional research companion](docs/RESEARCH-COMPANION.md), [technical tour](docs/JUDGES.md#2-existing-native-research-tools-about-1-minute) |
+| Scientific backend: signal preprocessing/beat estimates, two trained forest heads, ECG count-reliability experiment and four-policy evidence-link simulation | [Results, figures and reproduction](docs/evidence/README.md), [source map](docs/JUDGES.md#source-map) |
+
+The 30-second checklist story is a compact entry point to this larger implementation. The native research tools and benchmark results are separate from the current React release; the [tour](docs/JUDGES.md) shows exactly where each belongs.
 
 ## Try the app
 
-Open **Releases** on this repository and download **BioTwinSync-0.1.0-windows-x64-v11-submission.zip**. Extract the entire ZIP, open its **BioTwinSync** folder and double-click **BioTwinSync.exe**. Keep all adjacent files and the resources folder together. Windows x64 only; Chromium and Python are included. No account, API key, development tools or Internet connection is needed for the demo. This portable prototype is unsigned.
+You can [run the current interface directly from source](#run-the-current-interface-from-source) now. Portable packages are prepared for release; check **[Releases](https://github.com/calavera16/BioTwin-Sync/releases)** for uploaded assets. For the primary current interface, use **BioTwinSync-0.1.0-windows-x64-v11-submission.zip** when available. Extract the entire ZIP, open its **BioTwinSync** folder and double-click **BioTwinSync.exe**. Keep all adjacent files and the resources folder together. Windows x64 only; Chromium and Python are included. No account, API key, development tools or Internet connection is needed for the packaged demo. This portable prototype is unsigned.
+
+For the separate older native research interface, the optional **BioTwinSync-0.1.0-windows-x64-research-companion.zip** provides the NASA trained-model demo and historical reference tools without installing Python. It is a companion to the current app; the ECG count-reliability and evidence-link benchmarks remain source workflows. See [research companion details and exact navigation](docs/RESEARCH-COMPANION.md). Both package names describe prepared assets; source instructions remain available if release uploads are pending.
 
 1. Choose **Watch 30-second example**. Earth reviews 420 ms while the onboard reading changes to 585 ms. The returned authored rule is evaluated against the newer reading.
 2. Choose **View example checks**. Fresh 420 ms selects A; fresh 585 ms selects B; stale 585 ms returns UNKNOWN. Inspect the actual reason, freshness and authored steps.
 3. Choose **Open workspace**. Record a reading, send a delayed consultation, review the reply and explicitly record completion. Crew and flight surgeon have separate views; Earth sees only delivered evidence.
 
+Then explore **Measurements** for manual entry, supported CSV/JSON import and the five-trial browser reaction check; **Monitor** for source-separated history; **Recordings** for signal import, diagnostics, segment review and repeat requests; and **Assistant** for source-linked intake and reassessment. Export the session explicitly to preserve your work. The assistant uses authored rules and source material; it is separate from the experimental ECG models.
+
 ![Actual prototype showing the delayed-review story](docs/images/mission.png)
 
-[Desktop guide](docs/unified-desktop-guide.md) · [Demo walkthrough](docs/demo-30s.md) · [Verification and limits](docs/VERIFICATION.md) · [Seven-slide presentation](docs/BioTwin-Sync-Submission.pdf)
+[Desktop guide](docs/unified-desktop-guide.md) · [Demo walkthrough](docs/demo-30s.md) · [Verification and limits](docs/VERIFICATION.md) · [Complete judge tour](docs/JUDGES.md)
 
 ## What is real, and what is simulated?
 
