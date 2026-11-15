@@ -1,0 +1,21 @@
+{
+  "format": "biotwin-desktop-excerpts",
+  "version": 1,
+  "examples": [
+    {
+      "file": "crew001_ecg.json",
+      "sha256": "1c7fc6e2255b4762cd3abcba92ea8bfc7deb0795c636f14e6de4e5a6cc07c431",
+      "bytes": 404035
+    },
+    {
+      "file": "crew002_ecg.json",
+      "sha256": "dcc9fe9bcfe529d74bf3c3026f17725054e778e1c53d808fea6d18b99c23c1df",
+      "bytes": 418050
+    },
+    {
+      "file": "crew001_bvp.json",
+      "sha256": "dde7355978cf3011b4e7553349ccbd32f07642d843c837303535ea747aed1b24",
+      "bytes": 103808
+    }
+  ]
+}

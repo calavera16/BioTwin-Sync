@@ -1,0 +1,42 @@
+[
+  {
+    "local_path": "data/raw/nlsp/winscat_campaign3_catalog.json",
+    "url": "https://nlsp.nasa.gov/api/v1/data/datasets/331549a1-8928-52d6-8bb7-00df9ecb1e55/full",
+    "bytes": 210783,
+    "sha256": "37bf0f03346ca6583ad5246c836ba1041647a501bcf203ac2496cd6c2c53f4c9",
+    "verified_utc": "2026-11-14T02:27:04.193139+00:00",
+    "scope": "NASA public catalog or experiment metadata"
+  },
+  {
+    "local_path": "data/raw/nlsp/bedrest0543_campaign3_catalog.json",
+    "url": "https://nlsp.nasa.gov/api/v1/data/datasets/0f2faf2f-5c58-5214-93c7-a8d23c77b3ba/full",
+    "bytes": 205266,
+    "sha256": "43696bae1aac04b592fb6d62324845ef0df004ffa2e73668d7a811b5dcee9b4b",
+    "verified_utc": "2026-11-14T02:27:04.193416+00:00",
+    "scope": "NASA public catalog or experiment metadata"
+  },
+  {
+    "local_path": "data/raw/nlsp/winscat_experiment.json",
+    "url": "https://nlsp.nasa.gov/api/v1/data/experiments/80ee3231-7c42-5be4-b6c2-b8c788feeb50/full",
+    "bytes": 452524,
+    "sha256": "6be1b877165231ff28234b56b520108c450ff01900bf6de2af698ecb473c484f",
+    "verified_utc": "2026-11-14T02:27:04.193815+00:00",
+    "scope": "NASA public catalog or experiment metadata"
+  },
+  {
+    "local_path": "data/raw/nlsp/bedrest0543_experiment.json",
+    "url": "https://nlsp.nasa.gov/api/v1/data/experiments/707feb44-29c9-50b1-863a-8348c61f0359/full",
+    "bytes": 488938,
+    "sha256": "a0b86dc971e6e89b45d19212c60f8e42af9f2d6ebf6f5a5035d5b479b2361a25",
+    "verified_utc": "2026-11-14T02:27:04.194251+00:00",
+    "scope": "NASA public catalog or experiment metadata"
+  },
+  {
+    "local_path": "data/raw/nlsp/winscat_campaign1_readme_reference.txt",
+    "url": "https://nlsp.nasa.gov/api/v1/files/7dca3630-779f-50c3-bed5-f32133746ece/download",
+    "bytes": 700,
+    "sha256": "e1ed2982d7d0b2c5dd6cda62a59d48ce605f88b3bf40ec64da6fc30438d45146",
+    "verified_utc": "2026-11-14T02:27:04.194375+00:00",
+    "scope": "Campaign 1 metadata reference only; not a Campaign 3 dictionary"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "name": "biotwin-sync-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "BioTwin Sync offline desktop shell",
+  "main": "main.cjs",
+  "scripts": {
+    "test": "node --test test/*.test.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}

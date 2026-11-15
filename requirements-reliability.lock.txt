@@ -1,0 +1,12 @@
+# Development benchmark only; biotwin.ecg_reliability inference is standard-library.
+# Exact direct/parser/numerical package versions observed in the project .venv.
+wfdb==4.3.1
+numpy==2.5.4
+scipy==1.18.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+pandas==3.1.1
+aiohttp==3.14.5
+fsspec==2026.9.0
+soundfile==0.14.0
+requests==2.34.2

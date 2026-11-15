@@ -1,0 +1,51 @@
+BioTwin Sync 0.1.0 — portable runtime notices
+
+Runtime: CPython 3.13.17 (64-bit Windows) and its standard library,
+Tcl/Tk 8.6.15 (Python reports Tk 8.6), Windows runtime DLLs supplied with
+the installed CPython distribution. Python's bundled license and third-party
+notices are reproduced in PYTHON-LICENSE.txt. Tcl and Tk notices are in
+TCL-LICENSE.txt and TK-LICENSE.txt. The Microsoft Visual C runtime remains
+subject to Microsoft's redistributable terms; see the Python Windows binary
+distribution and https://visualstudio.microsoft.com/license-terms/ .
+
+Bundler: PyInstaller 6.22.3. Its bootloader exception and runtime-hook
+licensing terms are reproduced in PYINSTALLER-LICENSE.txt (including GPL
+and Apache terms). Bundling does not change the application's or data's
+license obligations. Build-only packages are not application dependencies:
+pyinstaller-hooks-contrib 2026.10, altgraph 0.17.5, packaging 26.3,
+pefile 2024.8.26, pywin32-ctypes 0.2.3, setuptools 84.2.1.
+See BUILD-INFO.json in the delivered folder for actual installed versions.
+
+This runtime includes no NumPy, SciPy, scikit-learn, Matplotlib, pandas,
+NASA processing scripts, partner images, raw NLSP or credentials.
+It includes data-only JSON weights for two small random forests trained locally
+with scikit-learn on NASA SOTERIA ECG. Standard-library code performs inference;
+the numerical training libraries are not bundled. One target is deliberately
+injected technical corruption; the second is the authors' heartbeat-detector
+exclusion annotations. The latter failed held-out evaluation. Both outputs on
+real recordings are experimental scores for manual review, not calibrated
+artifact probabilities, clean-signal certification or medical decisions.
+The earlier failed logistic model is preserved in development outputs and is
+not activated. The model and NASA source attribution do not imply endorsement.
+Bundled monitoring demonstrations run offline. Only the explicit Fetch NASA
+references action requests the 26 allowlisted public WinSCAT files from NASA;
+it verifies their lengths and SHA-256 values and stores a local cache. It sends
+no health records, login, credentials or telemetry. The metadata allowlist is
+bundled; raw NLSP files are not. Tk provides the local interface
+and Canvas plots; Python's
+standard library implements replay, JSON validation and local data handling.
+
+Tcl license source: Tcl official core-8-6-15/license.terms (unmodified),
+https://raw.githubusercontent.com/tcltk/tcl/core-8-6-15/license.terms
+Tk license source: installed Python 3.13.17 tcl/tk8.6/license.terms (unmodified).
+Python license source: installed Python 3.13.17 LICENSE.txt (unmodified).
+PyInstaller license source: installed 6.22.3 dist-info/licenses/COPYING.txt.
+
+SOTERIA data attribution, CC BY 4.0 link and independent transformations are
+in ATTRIBUTION.txt and embedded excerpt provenance. No NASA endorsement.
+Raw NLSP redistribution terms are unresolved, so those records are excluded.
+Local manually supplied measurements, reaction checks and imported files remain
+on this computer unless the user explicitly exports and shares them. There is
+no server, remote medical service or automatic sensor acquisition. Session
+files are not encrypted. No clinical efficacy or clean-signal certification is
+claimed. The reaction check is not a validated NASA WinSCAT/readiness test.

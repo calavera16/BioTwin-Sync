@@ -1,0 +1,109 @@
+BioTwin Sync - Astronaut Health Monitoring
+Portable Windows hackathon prototype
+
+START
+Extract the whole ZIP and run BioTwinSync.exe. Keep _internal beside the EXE.
+No Python installation, login, API key or internet is needed for bundled use.
+A four-step guide stays readable until you continue. Back, Next, Finish and
+Close guide are available. Reopen it from Help > Quick guide. It does not
+change your crew, measurements or session. Help also offers Reduce motion.
+
+THREE AREAS
+Open Crew 001 or Crew 002 from Crew overview.
+1. Your condition: read the graphical status and next action first.
+   View measurements opens Head / cognition, Heart / signals and supplied
+   measurements. Back to condition restores the simple view. Chart help
+   explains sources, axes, shading and unavailable values.
+2. Next step: open the onboard assistant or Review received steps. The full
+   checklist opens with scrolling and fixed completion, repeat and follow-up
+   controls. Guided examples cannot record actions. Old notes are cleared
+   when crew, session or evidence changes.
+3. Earth medical link: compare Crew now and Earth last received, observation
+   times and evidence age. Earth review reveals the
+   delivered reading and Messages / Review / References. These group replies,
+   Flight Surgeon authoring and historical NASA cases. Only delivered evidence
+   reaches the Earth view. Hide Earth review returns to the simpler display.
+
+Use Cognition, NASA recordings or Measurements beside the crew figure,
+or select its matching target. Alt+H opens cognition; Alt+C opens recordings.
+The figure is navigation, not an organ-health map. Session > Onboard assistant
+remains available when a received checklist is the main action.
+Subtle blue light supports the crew figure; repeated gradient rows are removed.
+Sunset orange emphasizes actions; light-blue traces show observations.
+Green means no detected change in the comparable recorded reaction check;
+other vitals have no change assessment here. It never means healthy or cleared.
+Amber asks for review, red marks a reported urgent concern, and
+neutral means more evidence is needed. Words and symbols accompany colour.
+Motion marks actual interface changes and simulated delivery. Source replay
+starts only when you press Play; Reduce motion stops automatic transitions.
+
+GUIDED DEMO
+Open Demo controls, then 09:00 Sent, 09:20 Earth, 09:30 Change, 09:40 Guide.
+At 09:30 the crew reading changes but Earth still sees the older reading.
+At 09:40 the received conditional checklist selects Plan B.
+Automatic playback stops and holds at 09:40. Next extended event explicitly
+explores the later example completions, repeat and follow-up. One timeline
+contains playback, speed and the slider.
+Moving packets show simulated delivery, not a real network.
+
+Why this result? and Inspect received snapshot open readable evidence first:
+source, observed/received times, quality and the actual descriptive reference.
+Technical JSON is a separate disclosure. The NASA trace banner identifies
+reference recordings as separate from this crew's observations.
+
+LOCAL INPUT
+Choose Session > Local measurements, then Start empty local session.
+This replaces the working session; save first if needed.
+Measure records supplied vitals or a sleep diary. Review Source, time &
+context before recording. Quality defaults to review; usable is your own
+attestation. Timed reaction check uses Space; cancelled/focus-lost or
+unfinished checks are not saved. It is not WinSCAT or a readiness test.
+Signals imports ECG/BVP JSON and offers marks/repeat requests. Open separate
+model demo keeps NASA example inference outside your personal history.
+History includes Export import examples. Imports validate before mutation.
+
+ONBOARD ASSISTANT
+From Next action, Open onboard assistant. Choose a concern and answer Yes,
+No or Unsure in Questions, then review Guidance and Record assessment.
+Add a note is optional; text is retained verbatim, not medically interpreted.
+Record actions only after performing them. Reassess when evidence changes.
+Completed actions do not mean symptoms resolved; prior urgent reports remain.
+More opens sources, answers/reasons, crew history, Earth received handoff
+and link simulation. Send consultation explicitly queues the handoff.
+Get urgent help and reported urgent warnings work before saving or sending.
+The program does not contact help or perform real medical communication.
+
+SESSIONS AND REVIEW
+Session contains Save/Open/Export, New operator session and Reset guided
+scenario. Ctrl+S saves; Ctrl+O opens. Choose the matching crew before import.
+Save/export before replacing a workspace. Existing saved files stay intact.
+To author a conditional checklist: send consultation, advance delivery,
+open Earth review > Review > Author Plan A / B, then deliver the reply. Complete
+the appropriate steps and Send follow-up. No step is automatically completed
+by choosing its branch. Session files have a 2 MiB limit and are not encrypted.
+
+READ THE DATA CORRECTLY
+The source label distinguishes synthetic mission data, local input and NASA
+recordings. Graph bands describe earlier-history spread, not healthy ranges.
+NASA SOTERIA traces are recorded pilot-simulator signals, not live astronaut
+sensors; channel clocks are independent. Amplitude units remain unverified.
+Missing values stay unavailable. Sleep diaries are not sleep stages.
+Two small NASA-trained forests are experimental signal-review aids:
+injected-corruption balanced accuracy 98.63%; natural author-exclusion
+balanced accuracy 44.16% (failed). Real recordings require manual review.
+The assistant uses source-linked rules, not a trained diagnosis model.
+Clinical review and flight approval are pending. It does not diagnose,
+prescribe medication or clear tasks. NHS/FDA sources are terrestrial
+background; the overdue fatigue-source review date is disclosed in Details.
+
+References > Fetch NASA optionally downloads 26 known public WinSCAT files
+(28,204 CSV bytes), verifies them and caches them. Internet is needed only
+for this action; no health data is uploaded, and no login/key/payment is
+required. Historical reference cases are not matched patients. Raw NLSP is
+not included in this ZIP. Help > About / data sources contains attribution.
+
+Offline automatic check (choose a new report path):
+BioTwinSync.exe --smoke-test --report "C:\writable folder\smoke.json"
+Exit 0 and status=passed indicate software checks, not clinical or visual
+acceptance or testing on another computer. Read ATTRIBUTION.txt and
+RUNTIME-NOTICES.txt. Keep normal Windows protection policies enabled.

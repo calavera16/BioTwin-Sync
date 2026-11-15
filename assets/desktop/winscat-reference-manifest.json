@@ -1,0 +1,162 @@
+{
+  "format": "biotwin-winscat-reference-allowlist",
+  "version": 1,
+  "files": [
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3E_6043.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/4a009d15-a2b0-5a01-97de-a066584bef58/download",
+      "bytes": 1223,
+      "sha256": "a522b1db93eaaaaedd59099af9a5ad0fbb2341c1623a82afa9f9bb38ed5f2327"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3B_7127.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/08f400a0-9e89-5295-8100-3c5e3bad3172/download",
+      "bytes": 862,
+      "sha256": "82132e9834562d29c8c184004bb6dc1ce8b2cb2f356cd86f297f207f9656b567"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3C_7772.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/79598ee2-80b0-5373-9102-80e2487d2ff7/download",
+      "bytes": 1225,
+      "sha256": "3ef0aa0b9133b0609af88ae77c5cf6ec71850f7a0b84239a0638750e5cf4c5c7"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3A_5788.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/07499a7e-b935-5cdf-9f49-a34874c33fe6/download",
+      "bytes": 1110,
+      "sha256": "8c3fdf93563eaa6c3bf98528f682ea9baabf928eeaeee6a72eb81e2cbc8aae11"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3B_6345.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/ecb775f9-bb1f-50e3-abbf-48ab468ff8e6/download",
+      "bytes": 953,
+      "sha256": "5da358b60f6b2369cd72d2fe840ac77a79c68631b34c01d2646ca13c56229b61"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3F_5683.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/c4acf7fa-c800-58ed-8059-a66b2d401ee4/download",
+      "bytes": 762,
+      "sha256": "7a6dc154d91ffe7323242970054be7c19d6de21a6a3b8f44f86de4e9fdee9b43"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3D_8779.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/6e00801e-037a-5394-a072-10eca26e633f/download",
+      "bytes": 1216,
+      "sha256": "a46f9d8b678e21ad15ff1309dd1a05848b00cd4c4740320cc44370531f5576d3"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3A_0446.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/170d1198-2ee2-5d1f-b2a1-68ead8bc7c80/download",
+      "bytes": 1208,
+      "sha256": "0efc99a671f08ec87e8fea0aa06bbb043dd9638c92f914b54d242a3d926c7f32"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3B_4023.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/91db27f4-df65-5b8e-9e47-0a852ae0bed4/download",
+      "bytes": 950,
+      "sha256": "23b04214c08fc13fbc6e21c93a5ed4d14653933991b9ea762329fce225ce9b92"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3E_5394.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/0d38fdc6-0ed4-5c35-bca1-15f0497d314f/download",
+      "bytes": 1231,
+      "sha256": "4d70f1b6c848c4b20e5da2d16c13fbab7fc48984581b9264ca3b90506d148e3d"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3E_6607.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/19a007ef-a6e7-538d-93e5-46d418cfd4f8/download",
+      "bytes": 1158,
+      "sha256": "d99990c6ff21591c4a373e7c83f2c35fcdc42b6e921655ee23dc1165c7ad372e"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3D_8881.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/dacb1b7d-719a-5d8d-b5b1-d37fcebb1c4a/download",
+      "bytes": 1251,
+      "sha256": "74286753e7ccc7e8a78e4183f26e0c648986e5bcdc0ae75ec458768de278bc80"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3F_9947.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/69b51367-bd40-53b5-9939-ec62a1f99b9b/download",
+      "bytes": 308,
+      "sha256": "96935bcee5eea78ca50091d3a027806f854187bd9d10392ee1a4c77a6f2709d0"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3A_0992.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/9ddf9bd7-86d2-5198-9ecd-fca0b841125a/download",
+      "bytes": 1323,
+      "sha256": "e08320a0ae84f1497250495b89a08d26e2b9a0e4e58daad7db44be19edd210c0"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3A_0224.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/22ef466b-3376-5380-94c9-010204a0497c/download",
+      "bytes": 1203,
+      "sha256": "5a784b6a71922508cf3c639d29db3bbb625f0c218a15a529632ca9c5aabc0958"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3B_3768.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/1d84e424-fdc9-52cf-abc2-092372538c08/download",
+      "bytes": 867,
+      "sha256": "58c5a24ad41f4970144e1800c420f87a86b1f5e6ec90f896ceaedc5bb87ee4a2"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3C_7352.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/5b212cbd-ed81-5f96-85e4-bd01ebd77356/download",
+      "bytes": 1217,
+      "sha256": "a9b55b8f8270f9d64bccf89ea6d57f25da5928e7fa69a1380b027b186a5d9dce"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3E_8715.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/4c77e2ab-2fe8-533a-9a36-939829cdf317/download",
+      "bytes": 1233,
+      "sha256": "7fb2bfb9f3d035003b0ec54865740aac977098065e4d1abad9b59cdec12c90bf"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3D_8615.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/c65e6204-04af-5d97-bf9c-908666f862ab/download",
+      "bytes": 1249,
+      "sha256": "86e017e461653fedb53e7d83f0db83a36b3b5e704dbad2ffcae5b04db14d8572"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3D_3985.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/8e93bf6f-592e-5db4-83bf-3a9b775c721b/download",
+      "bytes": 1207,
+      "sha256": "e8b60602bed0a87f23d06d3bc1489f594317895d4ae511735920dd875870b2f3"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3D_7961.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/b2e5c4ee-b95a-5f64-8610-b938c9655a89/download",
+      "bytes": 1231,
+      "sha256": "b92954eaf02ab6f18052a0dc9a0aa0bbc7b86f00fe131c0795130da53341a5a4"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3D_5165.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/a7595b5a-12f6-55ed-b865-215a6f7c4fff/download",
+      "bytes": 1206,
+      "sha256": "3e9840696e30ab683a9d34e1e0d4ea51d87702b2858d78276ef31128de8807e4"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3D_7984.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/0605f17e-918c-580c-8149-844c47955a42/download",
+      "bytes": 1251,
+      "sha256": "7a45ad227e2b630f8df043364d441dc6bab8860f59be0a80dff342d41d44a585"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3F_5705.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/18b513e5-cc67-558f-b8e2-7d83084e9c9f/download",
+      "bytes": 863,
+      "sha256": "e072b41f337aa9e16e89e9dc80f4fce39a602802345a40c12f625a34ce203706"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3F_9016.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/b5ed2c17-edef-5771-81d4-6dba033dd25b/download",
+      "bytes": 1045,
+      "sha256": "b2e174a596b0ee9bdc80876eb756d92789940e17af75192ce8f9a75a48fb663d"
+    },
+    {
+      "file": "MR085G_Campaign_3_WinSCAT_C3F_8454.csv",
+      "url": "https://nlsp.nasa.gov/api/v1/files/a9815a3a-3819-5662-9daf-3cba081a7289/download",
+      "bytes": 852,
+      "sha256": "1dd5c3531cfa066ef18dd235e6fd8d36d3bca0ad98e54c1b3ebb0491f72d36c3"
+    }
+  ]
+}

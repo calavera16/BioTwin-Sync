@@ -1,0 +1,26 @@
+{
+  "format": "biotwin-presentation-assets",
+  "version": 1,
+  "files": [
+    {
+      "file": "index.html",
+      "bytes": 347,
+      "sha256": "74f1abe52e1aa3f97a7a63c3ce779dcce7ac09f40b437dbb033fd33b3e057276"
+    },
+    {
+      "file": "app.js",
+      "bytes": 374520,
+      "sha256": "5bb7ef9fe5c37f1355318d0fdc1c0af68ae526ba0da20d798e56bad2c2080ddb"
+    },
+    {
+      "file": "app.css",
+      "bytes": 60673,
+      "sha256": "7b51aa54faed28da5ce5665388e28661424abbaf98158c2ef2ee0eac2719da5a"
+    },
+    {
+      "file": "THIRD-PARTY-NOTICES.txt",
+      "bytes": 3410,
+      "sha256": "fc8dbe121ca89ed677db3a14cf9e63dbbfbc9ff38bca21fb2fa16c213c281566"
+    }
+  ]
+}

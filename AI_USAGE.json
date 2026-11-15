@@ -1,0 +1,45 @@
+{
+  "schema": "biotwin-ai-disclosure-v1",
+  "date": "2026-11-15",
+  "tools": [
+    {
+      "name": "OpenAI ChatGPT / Codex",
+      "uses": [
+        "code generation and revision",
+        "tests and debugging",
+        "documentation",
+        "slide wording and layout",
+        "synthetic demonstration fixtures"
+      ]
+    },
+    {
+      "name": "OpenAI image generation",
+      "uses": [
+        "abstract slide cover illustration"
+      ]
+    }
+  ],
+  "code_scope": [
+    "biotwin/",
+    "ui/",
+    "scripts/",
+    "tests/",
+    "run_desktop.py",
+    "run_webhost.py"
+  ],
+  "synthetic_data": {
+    "reaction_time_ms": [
+      420,
+      585
+    ],
+    "threshold": "illustrative; exact rule computed by existing protocol evaluator",
+    "communication_delay": "20 minutes each way, simulated",
+    "not_nasa_measurements": true
+  },
+  "unaltered_research_data": "NASA SOTERIA excerpts preserve parsed original values and provenance; not AI-generated",
+  "generated_visuals": "Presentation abstract illustration visibly labeled; app SVG diagrams/icons are AI-assisted code-authored visuals",
+  "runtime_generative_ai": false,
+  "clinical_validation": false,
+  "disclosure": "AI_USE.md",
+  "third_party_attribution": "DATA_SOURCES.md"
+}

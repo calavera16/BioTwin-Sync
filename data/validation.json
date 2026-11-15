@@ -1,0 +1,823 @@
+{
+  "checked_utc": "2026-11-14T01:35:01.118205+00:00",
+  "method": "All 17 files: local byte length and SHA-256 recomputed against download manifest. All waveform rows: selected columns parsed as float64; timestamp monotonicity and finite values checked. Workbook XML parsed without interpreting Excel times as intervals. No clinical or model validation.",
+  "files": [
+    {
+      "source_key": "Crew_01/Processing/abm_leftseat_scenario2.csv",
+      "bytes": 36932613,
+      "sha256": "641c11ba4c5df73abe4877a24557163e867668cf46fab205f4497b36bb4c1ae4",
+      "integrity": "pass"
+    },
+    {
+      "source_key": "Crew_02/Processing/abm_leftseat_scenario2.csv",
+      "bytes": 44713780,
+      "sha256": "03001d70c6cf15da899e1072561520e5c196cb66b8c4f815f8c2179405b955ef",
+      "integrity": "pass"
+    },
+    {
+      "source_key": "Crew_03/Processing/abm_leftseat_scenario2.csv",
+      "bytes": 32874676,
+      "sha256": "1b996b396c2ae91b0075e8e452e3e38bd19cf78c6802083c78e6e031dd6e8e0d",
+      "integrity": "pass"
+    },
+    {
+      "source_key": "Crew_05/Processing/abm_leftseat_scenario2.csv",
+      "bytes": 29143071,
+      "sha256": "3974605aedb3c782e9d690d2630518802b31766686650b4a186f18e42f269027",
+      "integrity": "pass"
+    },
+    {
+      "source_key": "Crew_06/Processing/abm_leftseat_scenario1.csv",
+      "bytes": 37253831,
+      "sha256": "5715b501c3a31fa7a641eebd2933a9f087dfa7ba4a7b22902c5cbbe051ac16a9",
+      "integrity": "pass"
+    },
+    {
+      "source_key": "Crew_10/Processing/abm_leftseat_scenario2.csv",
+      "bytes": 31858025,
+      "sha256": "21fff8488df6eaf55237985bc1298caf7102a131bdec7c6bebf417fa35ec6d9d",
+      "integrity": "pass"
+    },
+    {
+      "source_key": "Crew_01/Processing/abm_leftseat_scenario1.csv",
+      "bytes": 31075460,
+      "sha256": "d281977605267e39f3d9f3f4c5f45d8c2a3d492ec228fe740f1fac1926558587",
+      "integrity": "pass"
+    },
+    {
+      "source_key": "Crew_01/Processing/emp_bvp_leftseat_scenario1.csv",
+      "bytes": 1787951,
+      "sha256": "b0373e829a290ac1528cc916ba66ca502daf2a10bf1207e66a3fd2a2759f4919",
+      "integrity": "pass"
+    },
+    {
+      "source_key": "Crew_01/Processing/emp_bvp_leftseat_scenario2.csv",
+      "bytes": 2131890,
+      "sha256": "04391c631c16f3c52334fe751947c3d213345e26a4e874487d5595de52db9bdb",
+      "integrity": "pass"
+    },
+    {
+      "source_key": "Crew_01/Processing/emp_acc_leftseat_scenario2.csv",
+      "bytes": 1152571,
+      "sha256": "84c101ebf1fb107eb4ffd2cceaffba573ee2d5230aa28c801a182ef34a55aba9",
+      "integrity": "pass"
+    },
+    {
+      "source_key": "Analysis/Analysis_ekg_quality_vector.xlsx",
+      "bytes": 46287,
+      "sha256": "9e51cb86f850b08ca677317a8a2e0f6315b4c6155836c1b26ad3ae3c974ebe5d",
+      "integrity": "pass"
+    },
+    {
+      "source_key": "Crew_01/Processing/event_vector_scenario.csv",
+      "bytes": 35,
+      "sha256": "846f173bf464bdf83460b8a0093639118bc2c66d8c72377c71c07a0361ebb397",
+      "integrity": "pass"
+    },
+    {
+      "source_key": "Crew_02/Processing/event_vector_scenario.csv",
+      "bytes": 35,
+      "sha256": "846f173bf464bdf83460b8a0093639118bc2c66d8c72377c71c07a0361ebb397",
+      "integrity": "pass"
+    },
+    {
+      "source_key": "Crew_03/Processing/event_vector_scenario.csv",
+      "bytes": 107,
+      "sha256": "9bfb413a22f872b334f43ce6c157f06231e2de06f264844a239b36f248d4560a",
+      "integrity": "pass"
+    },
+    {
+      "source_key": "Crew_05/Processing/event_vector_scenario.csv",
+      "bytes": 78,
+      "sha256": "36bb8ef00e804646a672624927c086fdf9a3a007529090c498f75cebeebe5d09",
+      "integrity": "pass"
+    },
+    {
+      "source_key": "Crew_06/Processing/event_vector_scenario.csv",
+      "bytes": 107,
+      "sha256": "2cc9a287f4a3b499548ef1ade5910de38f0ac0903932c40430ab403725d24aa3",
+      "integrity": "pass"
+    },
+    {
+      "source_key": "Crew_10/Processing/event_vector_scenario.csv",
+      "bytes": 106,
+      "sha256": "69ec1bf5e6a5df6044eedb421f6d14a4b500a1fc6e9737f911a19b81adcf868f",
+      "integrity": "pass"
+    }
+  ],
+  "waveforms": [
+    {
+      "source_key": "Crew_01/Processing/abm_leftseat_scenario2.csv",
+      "rows": 309796,
+      "columns": [
+        "UserTimeStamp",
+        "ECG",
+        "POz",
+        "Fz",
+        "Cz",
+        "C3",
+        "C4",
+        "F3",
+        "F4",
+        "P3",
+        "P4",
+        "Classification",
+        "HighEngagement",
+        "LowEngagement",
+        "Distraction",
+        "Drowsy",
+        "WorkloadFBDS",
+        "WorkloadBDS",
+        "WorkloadAverage",
+        "Unnamed: 19"
+      ],
+      "audited_channels": [
+        "ECG"
+      ],
+      "time_start": 0.0,
+      "time_end": 1210.1611380000031,
+      "duration_seconds": 1210.1611380000031,
+      "time_nonfinite": 0,
+      "nonincreasing_steps": 0,
+      "median_positive_time_step": 0.0036049999980605207,
+      "max_time_step": 0.10094399999798043,
+      "observed_count_per_span_hz": 255.99483430114842,
+      "channels": {
+        "ECG": {
+          "nonfinite": 0,
+          "min": -4159.15,
+          "max": 4404.1
+        }
+      }
+    },
+    {
+      "source_key": "Crew_02/Processing/abm_leftseat_scenario2.csv",
+      "rows": 374718,
+      "columns": [
+        "UserTimeStamp",
+        "ECG",
+        "POz",
+        "Fz",
+        "Cz",
+        "C3",
+        "C4",
+        "F3",
+        "F4",
+        "P3",
+        "P4",
+        "Classification",
+        "HighEngagement",
+        "LowEngagement",
+        "Distraction",
+        "Drowsy",
+        "WorkloadFBDS",
+        "WorkloadBDS",
+        "WorkloadAverage",
+        "Unnamed: 19"
+      ],
+      "audited_channels": [
+        "ECG"
+      ],
+      "time_start": 0.0,
+      "time_end": 1462.7428650000002,
+      "duration_seconds": 1462.7428650000002,
+      "time_nonfinite": 0,
+      "nonincreasing_steps": 0,
+      "median_positive_time_step": 0.0036050000053364784,
+      "max_time_step": 0.10096699999849079,
+      "observed_count_per_span_hz": 256.174211453084,
+      "channels": {
+        "ECG": {
+          "nonfinite": 0,
+          "min": -3732.06,
+          "max": 4794.57
+        }
+      }
+    },
+    {
+      "source_key": "Crew_03/Processing/abm_leftseat_scenario2.csv",
+      "rows": 275978,
+      "columns": [
+        "UserTimeStamp",
+        "ECG",
+        "POz",
+        "Fz",
+        "Cz",
+        "C3",
+        "C4",
+        "F3",
+        "F4",
+        "P3",
+        "P4",
+        "Classification",
+        "HighEngagement",
+        "LowEngagement",
+        "Distraction",
+        "Drowsy",
+        "WorkloadFBDS",
+        "WorkloadBDS",
+        "WorkloadAverage",
+        "Unnamed: 19"
+      ],
+      "audited_channels": [
+        "ECG"
+      ],
+      "time_start": 0.0,
+      "time_end": 1078.0915380000006,
+      "duration_seconds": 1078.0915380000006,
+      "time_nonfinite": 0,
+      "nonincreasing_steps": 0,
+      "median_positive_time_step": 0.0036049999980605207,
+      "max_time_step": 0.100960000003397,
+      "observed_count_per_span_hz": 255.98661177878557,
+      "channels": {
+        "ECG": {
+          "nonfinite": 0,
+          "min": -1980.47,
+          "max": 2327.61
+        }
+      }
+    },
+    {
+      "source_key": "Crew_05/Processing/abm_leftseat_scenario2.csv",
+      "rows": 244628,
+      "columns": [
+        "UserTimeStamp",
+        "ECG",
+        "POz",
+        "Fz",
+        "Cz",
+        "C3",
+        "C4",
+        "F3",
+        "F4",
+        "P3",
+        "P4",
+        "Classification",
+        "HighEngagement",
+        "LowEngagement",
+        "Distraction",
+        "Drowsy",
+        "WorkloadFBDS",
+        "WorkloadBDS",
+        "WorkloadAverage",
+        "Unnamed: 19"
+      ],
+      "audited_channels": [
+        "ECG"
+      ],
+      "time_start": 0.0,
+      "time_end": 955.5252089999994,
+      "duration_seconds": 955.5252089999994,
+      "time_nonfinite": 0,
+      "nonincreasing_steps": 0,
+      "median_positive_time_step": 0.0036050000053364784,
+      "max_time_step": 0.021389000001363456,
+      "observed_count_per_span_hz": 256.0131304709514,
+      "channels": {
+        "ECG": {
+          "nonfinite": 0,
+          "min": -2277.38,
+          "max": 1673.26
+        }
+      }
+    },
+    {
+      "source_key": "Crew_06/Processing/abm_leftseat_scenario1.csv",
+      "rows": 312360,
+      "columns": [
+        "UserTimeStamp",
+        "ECG",
+        "POz",
+        "Fz",
+        "Cz",
+        "C3",
+        "C4",
+        "F3",
+        "F4",
+        "P3",
+        "P4",
+        "Classification",
+        "HighEngagement",
+        "LowEngagement",
+        "Distraction",
+        "Drowsy",
+        "WorkloadFBDS",
+        "WorkloadBDS",
+        "WorkloadAverage",
+        "Unnamed: 19"
+      ],
+      "audited_channels": [
+        "ECG"
+      ],
+      "time_start": 0.0,
+      "time_end": 1220.1509000000005,
+      "duration_seconds": 1220.1509000000005,
+      "time_nonfinite": 0,
+      "nonincreasing_steps": 0,
+      "median_positive_time_step": 0.0036049999980605207,
+      "max_time_step": 0.1009459999986575,
+      "observed_count_per_span_hz": 256.00030291335264,
+      "channels": {
+        "ECG": {
+          "nonfinite": 0,
+          "min": -1992.32,
+          "max": 2333.6
+        }
+      }
+    },
+    {
+      "source_key": "Crew_10/Processing/abm_leftseat_scenario2.csv",
+      "rows": 267370,
+      "columns": [
+        "UserTimeStamp",
+        "ECG",
+        "POz",
+        "Fz",
+        "Cz",
+        "C3",
+        "C4",
+        "F3",
+        "F4",
+        "P3",
+        "P4",
+        "Classification",
+        "HighEngagement",
+        "LowEngagement",
+        "Distraction",
+        "Drowsy",
+        "WorkloadFBDS",
+        "WorkloadBDS",
+        "WorkloadAverage",
+        "Unnamed: 19"
+      ],
+      "audited_channels": [
+        "ECG"
+      ],
+      "time_start": 0.0,
+      "time_end": 1044.4299700000047,
+      "duration_seconds": 1044.4299700000047,
+      "time_nonfinite": 0,
+      "nonincreasing_steps": 0,
+      "median_positive_time_step": 0.0036049999980605207,
+      "max_time_step": 0.10097299999324605,
+      "observed_count_per_span_hz": 255.99514345609865,
+      "channels": {
+        "ECG": {
+          "nonfinite": 0,
+          "min": -3514.04,
+          "max": 2898.81
+        }
+      }
+    },
+    {
+      "source_key": "Crew_01/Processing/abm_leftseat_scenario1.csv",
+      "rows": 260840,
+      "columns": [
+        "UserTimeStamp",
+        "ECG",
+        "POz",
+        "Fz",
+        "Cz",
+        "C3",
+        "C4",
+        "F3",
+        "F4",
+        "P3",
+        "P4",
+        "Classification",
+        "HighEngagement",
+        "LowEngagement",
+        "Distraction",
+        "Drowsy",
+        "WorkloadFBDS",
+        "WorkloadBDS",
+        "WorkloadAverage",
+        "Unnamed: 19"
+      ],
+      "audited_channels": [
+        "ECG"
+      ],
+      "time_start": 0.0,
+      "time_end": 1018.8645780000006,
+      "duration_seconds": 1018.8645780000006,
+      "time_nonfinite": 0,
+      "nonincreasing_steps": 0,
+      "median_positive_time_step": 0.0036050000053364784,
+      "max_time_step": 0.033648999997240026,
+      "observed_count_per_span_hz": 256.00948902553745,
+      "channels": {
+        "ECG": {
+          "nonfinite": 0,
+          "min": -4549.58,
+          "max": 3800.52
+        }
+      }
+    },
+    {
+      "source_key": "Crew_01/Processing/emp_bvp_leftseat_scenario1.csv",
+      "rows": 65152,
+      "columns": [
+        "UserTimeStamp",
+        "Bvp",
+        "Unnamed: 2"
+      ],
+      "audited_channels": [
+        "Bvp"
+      ],
+      "time_start": 0.0,
+      "time_end": 1019.0789979999972,
+      "duration_seconds": 1019.0789979999972,
+      "time_nonfinite": 0,
+      "nonincreasing_steps": 0,
+      "median_positive_time_step": 0.015998999995645136,
+      "max_time_step": 0.1409990000029211,
+      "observed_count_per_span_hz": 63.93125570035561,
+      "channels": {
+        "Bvp": {
+          "nonfinite": 0,
+          "min": -1946.77,
+          "max": 1882.77
+        }
+      }
+    },
+    {
+      "source_key": "Crew_01/Processing/emp_bvp_leftseat_scenario2.csv",
+      "rows": 77411,
+      "columns": [
+        "UserTimeStamp",
+        "Bvp",
+        "Unnamed: 2"
+      ],
+      "audited_channels": [
+        "Bvp"
+      ],
+      "time_start": 0.0,
+      "time_end": 1210.5559999999969,
+      "duration_seconds": 1210.5559999999969,
+      "time_nonfinite": 0,
+      "nonincreasing_steps": 0,
+      "median_positive_time_step": 0.015998999995645136,
+      "max_time_step": 0.125,
+      "observed_count_per_span_hz": 63.945823241551984,
+      "channels": {
+        "Bvp": {
+          "nonfinite": 0,
+          "min": -2571.69,
+          "max": 2938.35
+        }
+      }
+    },
+    {
+      "source_key": "Crew_01/Processing/emp_acc_leftseat_scenario2.csv",
+      "rows": 38725,
+      "columns": [
+        "UserTimeStamp",
+        "AccX",
+        "AccY",
+        "AccZ",
+        "Unnamed: 4"
+      ],
+      "audited_channels": [
+        "AccX",
+        "AccY",
+        "AccZ"
+      ],
+      "time_start": 0.0,
+      "time_end": 1210.8999990000011,
+      "duration_seconds": 1210.8999990000011,
+      "time_nonfinite": 0,
+      "nonincreasing_steps": 0,
+      "median_positive_time_step": 0.031000000002677552,
+      "max_time_step": 0.21899999999732245,
+      "observed_count_per_span_hz": 31.979519392170687,
+      "channels": {
+        "AccX": {
+          "nonfinite": 0,
+          "min": -128.0,
+          "max": 38.0
+        },
+        "AccY": {
+          "nonfinite": 0,
+          "min": -98.0,
+          "max": 55.0
+        },
+        "AccZ": {
+          "nonfinite": 0,
+          "min": -112.0,
+          "max": 97.0
+        }
+      }
+    }
+  ],
+  "event_vectors": [
+    {
+      "source_key": "Crew_01/Processing/event_vector_scenario.csv",
+      "header": [
+        "",
+        "0",
+        "1",
+        "2"
+      ],
+      "rows": [
+        [
+          "0",
+          "0.0",
+          "0.0",
+          "0.0"
+        ],
+        [
+          "1",
+          "0.0",
+          "0.0",
+          "0.0"
+        ]
+      ],
+      "interpretation": "Scenario event metadata only; field-to-scenario mapping unverified. All-zero values are not proof of absent clinical or simulator events."
+    },
+    {
+      "source_key": "Crew_02/Processing/event_vector_scenario.csv",
+      "header": [
+        "",
+        "0",
+        "1",
+        "2"
+      ],
+      "rows": [
+        [
+          "0",
+          "0.0",
+          "0.0",
+          "0.0"
+        ],
+        [
+          "1",
+          "0.0",
+          "0.0",
+          "0.0"
+        ]
+      ],
+      "interpretation": "Scenario event metadata only; field-to-scenario mapping unverified. All-zero values are not proof of absent clinical or simulator events."
+    },
+    {
+      "source_key": "Crew_03/Processing/event_vector_scenario.csv",
+      "header": [
+        "",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "rows": [
+        [
+          "0",
+          "130.0",
+          "135.0",
+          "0.0",
+          "240.12867600000027",
+          "30.0",
+          "0.0"
+        ],
+        [
+          "1",
+          "865.0",
+          "600.0",
+          "540.0",
+          "673.6705780000048",
+          "370.0",
+          "0.0"
+        ]
+      ],
+      "interpretation": "Scenario event metadata only; field-to-scenario mapping unverified. All-zero values are not proof of absent clinical or simulator events."
+    },
+    {
+      "source_key": "Crew_05/Processing/event_vector_scenario.csv",
+      "header": [
+        "",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "rows": [
+        [
+          "0",
+          "130.0",
+          "135.0",
+          "0.0",
+          "0.0",
+          "30.0",
+          "0.0"
+        ],
+        [
+          "1",
+          "865.0",
+          "600.0",
+          "540.0",
+          "0.0",
+          "370.0",
+          "0.0"
+        ]
+      ],
+      "interpretation": "Scenario event metadata only; field-to-scenario mapping unverified. All-zero values are not proof of absent clinical or simulator events."
+    },
+    {
+      "source_key": "Crew_06/Processing/event_vector_scenario.csv",
+      "header": [
+        "",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "rows": [
+        [
+          "0",
+          "130.0",
+          "135.0",
+          "0.0",
+          "240.04032300000108",
+          "30.0",
+          "0.0"
+        ],
+        [
+          "1",
+          "865.0",
+          "600.0",
+          "540.0",
+          "686.8995740000028",
+          "370.0",
+          "0.0"
+        ]
+      ],
+      "interpretation": "Scenario event metadata only; field-to-scenario mapping unverified. All-zero values are not proof of absent clinical or simulator events."
+    },
+    {
+      "source_key": "Crew_10/Processing/event_vector_scenario.csv",
+      "header": [
+        "",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "rows": [
+        [
+          "0",
+          "130.0",
+          "135.0",
+          "0.0",
+          "240.06039099999907",
+          "30.0",
+          "0.0"
+        ],
+        [
+          "1",
+          "865.0",
+          "600.0",
+          "540.0",
+          "665.748434000001",
+          "370.0",
+          "0.0"
+        ]
+      ],
+      "interpretation": "Scenario event metadata only; field-to-scenario mapping unverified. All-zero values are not proof of absent clinical or simulator events."
+    }
+  ],
+  "annotation_workbook": {
+    "sheets": 26,
+    "valid_percentage_strings": 59,
+    "nan_or_blank": 145,
+    "ambiguous_noninterval": [
+      {
+        "sheet": "Crew_05_Left",
+        "cell": "H2",
+        "raw": "0.46736111111111112"
+      },
+      {
+        "sheet": "Crew_09_Left",
+        "cell": "B2",
+        "raw": "1.6118055555555555"
+      },
+      {
+        "sheet": "Crew_09_Left",
+        "cell": "C2",
+        "raw": "0.34027777777777773"
+      },
+      {
+        "sheet": "Crew_09_Left",
+        "cell": "F2",
+        "raw": "1.5270833333333333"
+      }
+    ],
+    "selected_record_entries": [
+      {
+        "source_key": "Crew_01/Processing/abm_leftseat_scenario2.csv",
+        "sheet": "Crew_01_Left",
+        "header": "scen 2",
+        "cell": "B2",
+        "raw": "76:80",
+        "percentage_intervals": [
+          [
+            76.0,
+            80.0
+          ]
+        ]
+      },
+      {
+        "source_key": "Crew_02/Processing/abm_leftseat_scenario2.csv",
+        "sheet": "Crew_02_Left",
+        "header": "scen 2",
+        "cell": "B2",
+        "raw": "23:48",
+        "percentage_intervals": [
+          [
+            23.0,
+            48.0
+          ]
+        ]
+      },
+      {
+        "source_key": "Crew_03/Processing/abm_leftseat_scenario2.csv",
+        "sheet": "Crew_03_Left",
+        "header": "scen 2",
+        "cell": "B2",
+        "raw": "10:49",
+        "percentage_intervals": [
+          [
+            10.0,
+            49.0
+          ]
+        ]
+      },
+      {
+        "source_key": "Crew_05/Processing/abm_leftseat_scenario2.csv",
+        "sheet": "Crew_05_Left",
+        "header": "scen 2",
+        "cell": "B2",
+        "raw": "17:19;53:54;88:90",
+        "percentage_intervals": [
+          [
+            17.0,
+            19.0
+          ],
+          [
+            53.0,
+            54.0
+          ],
+          [
+            88.0,
+            90.0
+          ]
+        ]
+      },
+      {
+        "source_key": "Crew_06/Processing/abm_leftseat_scenario1.csv",
+        "sheet": "Crew_06_Left",
+        "header": "scen 1",
+        "cell": "A2",
+        "raw": "3:5;15:16",
+        "percentage_intervals": [
+          [
+            3.0,
+            5.0
+          ],
+          [
+            15.0,
+            16.0
+          ]
+        ]
+      },
+      {
+        "source_key": "Crew_10/Processing/abm_leftseat_scenario2.csv",
+        "sheet": "Crew_10_Left",
+        "header": "scen 2",
+        "cell": "B2",
+        "raw": "5:19",
+        "percentage_intervals": [
+          [
+            5.0,
+            19.0
+          ]
+        ]
+      }
+    ]
+  },
+  "total_files": 17,
+  "total_bytes": 248970623,
+  "limits": [
+    "Structural validation only; physiological values and time units not clinically validated.",
+    "ECG/PPG/accelerometry cross-device alignment not established.",
+    "Author exclusions describe peak-detector usability, not diagnoses or verified artifact subtypes.",
+    "Unmarked/nan regions not independently certified clean.",
+    "No training, tuning, test accuracy or executable produced."
+  ]
+}

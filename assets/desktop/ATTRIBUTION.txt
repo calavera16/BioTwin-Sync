@@ -1,0 +1,88 @@
+NASA SOTERIA Simulation Testbed Data
+NASA Langley Research Center / NASA System-Wide Safety Project
+
+Fettrow, T. and colleagues (2025). Human Contributions to Safety Data
+Testbed Flight Simulation Study: Data Methods, Processing, and Quality.
+Scientific Data 12, 1247. https://doi.org/10.1038/s41597-025-05336-7
+Registry: https://registry.opendata.aws/nasa-soteria-data/
+Data license: Creative Commons Attribution 4.0 International
+https://creativecommons.org/licenses/by/4.0/
+Accessed: 2026-11-14
+
+Changes: independently parsed selected timestamp and ECG/BVP columns;
+retained exact parsed source values and source-relative timestamps in
+contiguous excerpts of at most 60 seconds. No filtering, interpolation,
+normalization or NASA processing scripts. Display-only min/max decimation
+retains extrema; packaged excerpts retain all selected samples.
+
+Each excerpt records its full source object key, full source SHA-256,
+original sample count and half-open original sample offset. ECG marks
+retain original workbook provenance and percentages mapped against the
+ORIGINAL number of samples, not elapsed time or excerpt length. Display
+shades the strict interior of floored bounds. Endpoint-contact benchmark
+windows were omitted. Marks describe author heartbeat-detector exclusions,
+not diseases or complete artifact truth. Unmarked is not certified clean.
+BVP has no supervised quality annotations or classifier.
+
+The three exact derived JSON files and their hashes are allowlisted in
+manifest.json. Original source objects:
+Crew_01/Processing/abm_leftseat_scenario2.csv
+Crew_02/Processing/abm_leftseat_scenario2.csv
+Crew_01/Processing/emp_bvp_leftseat_scenario2.csv
+Separate ECG annotation object: Analysis/Analysis_ekg_quality_vector.xlsx
+
+Original source identities remain in provenance only. Crew 001 and Crew 002
+are anonymous display labels. Synthetic consultation sessions and real NASA
+waveform participants are separate identities and are never linked.
+No NASA logo or endorsement is implied. Raw NLSP and NASA processing code
+are not included. Do not apply the SOTERIA license to unrelated NLSP data.
+
+Offline assistant background sources (accessed 2026-11-14)
+The small assistant library contains original paraphrases and source metadata,
+not full-page reproductions. The following sources are distinct from NASA
+signal data and are not licensed by SOTERIA's CC BY 4.0 notice above.
+
+NASA remote monitoring announcement (project motivation only):
+https://www.nasa.gov/hrp/researchers-apply-now-with-your-ideas-to-advance-remote-health-monitoring-in-space/
+NHS: Headaches; Shortness of breath; Tiredness and fatigue:
+https://www.nhs.uk/symptoms/headaches/
+https://www.nhs.uk/symptoms/shortness-of-breath/
+https://www.nhs.uk/symptoms/tiredness-and-fatigue/
+FDA: Pulse Oximeter Basics:
+https://www.fda.gov/consumers/consumer-updates/pulse-oximeter-basics
+
+These terrestrial sources do not constitute a flight-approved protocol.
+Clinical review has not been performed. The fatigue page's stated review-due
+date (2026-06-02) had passed on access and is retained in source metadata.
+Urgent crew-contact wording is a project adaptation, not NASA endorsement.
+The library does not diagnose, prescribe medicines or clear mission tasks.
+
+Separate ECG count-reliability research model (accessed 2026-11-14)
+MIT-BIH Arrhythmia Database v1.0.0 and MIT-BIH Noise Stress Test Database
+v1.0.0, George Moody and Roger Mark, PhysioNet.
+https://physionet.org/content/mitdb/1.0.0/
+https://physionet.org/content/nstdb/1.0.0/
+Data license: Open Data Commons Attribution License v1.0
+https://opendatacommons.org/licenses/by/1-0/
+
+Moody G, Mark R (2005). MIT-BIH Arrhythmia Database, version 1.0.0.
+https://doi.org/10.13026/C2F305
+Moody GB, Mark RG (2001). The impact of the MIT-BIH Arrhythmia Database.
+IEEE Engineering in Medicine and Biology 20(3):45-50.
+Moody GB, Muldrow WE, Mark RG (1984). A noise stress test for arrhythmia
+detectors. Computers in Cardiology 11:381-384.
+Noise Stress Test Database DOI: https://doi.org/10.13026/C2HS3T
+Pollard T and colleagues (2026). PhysioNet as a global platform for
+biomedical research. Nature Health 1:792-795.
+https://doi.org/10.1038/s44360-026-00096-z
+
+Transformations: independent detector and fixed features from the first
+600 seconds of the selected ECG lead; annotated beat counts provide the
+engineering error target. Person-separated training, calibration and test;
+correlated noise variants reserved for stress reporting. Data-only scaler
+and logistic coefficients carry frozen-plan provenance. No raw MIT-BIH
+recordings or development-time WFDB/numerical libraries are bundled.
+The model concerns detector count error, not disease, astronaut health,
+clinical confidence or mission clearance. NASA-domain acceptance is withheld.
+The model's own deployment field and experiment report govern its limited
+benchmark status. No PhysioNet, MIT, hospital or NASA endorsement is implied.

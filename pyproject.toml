@@ -1,0 +1,14 @@
+[project]
+name = "biotwin-sync"
+version = "0.1.0"
+description = "Offline descriptive NASA audit and synthetic conditional measurement workflow"
+requires-python = ">=3.13"
+dependencies = []
+license = "MIT"
+
+[project.optional-dependencies]
+signals = ["numpy>=2,<3"]
+training = ["numpy>=2,<3", "scikit-learn>=1.6,<2", "matplotlib>=3.9,<4"]
+
+[project.scripts]
+biotwin = "biotwin.__main__:main"

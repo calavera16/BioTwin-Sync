@@ -1,0 +1,89 @@
+{
+  "created_utc": "2026-11-14T01:38:06.276616+00:00",
+  "status": "Frozen before feature/model fitting; no model trained or evaluated. Structural audits and annotation availability were inspected.",
+  "unit": "crew",
+  "train": [
+    "Crew_01",
+    "Crew_02",
+    "Crew_03"
+  ],
+  "validation": [
+    "Crew_05"
+  ],
+  "test": [
+    "Crew_06",
+    "Crew_10"
+  ],
+  "rules": [
+    "All participants/seats/scenarios from a crew remain in its assigned group, including future downloads.",
+    "Overlapping windows from the same recording must not cross groups.",
+    "Fit normalization on train only; select thresholds with validation only.",
+    "Do not tune on held-out test results; report any subsequent reuse.",
+    "Selected ECG records were chosen for explicit annotation availability, not a random representative cohort.",
+    "Annotation interpretation and window-boundary policy remain to be frozen before fitting."
+  ],
+  "records": [
+    {
+      "source_key": "Crew_01/Processing/abm_leftseat_scenario2.csv",
+      "sha256": "641c11ba4c5df73abe4877a24557163e867668cf46fab205f4497b36bb4c1ae4",
+      "crew": "Crew_01",
+      "split": "train",
+      "participant": "Crew_01_Left",
+      "primary_quality_experiment": true
+    },
+    {
+      "source_key": "Crew_02/Processing/abm_leftseat_scenario2.csv",
+      "sha256": "03001d70c6cf15da899e1072561520e5c196cb66b8c4f815f8c2179405b955ef",
+      "crew": "Crew_02",
+      "split": "train",
+      "participant": "Crew_02_Left",
+      "primary_quality_experiment": true
+    },
+    {
+      "source_key": "Crew_03/Processing/abm_leftseat_scenario2.csv",
+      "sha256": "1b996b396c2ae91b0075e8e452e3e38bd19cf78c6802083c78e6e031dd6e8e0d",
+      "crew": "Crew_03",
+      "split": "train",
+      "participant": "Crew_03_Left",
+      "primary_quality_experiment": true
+    },
+    {
+      "source_key": "Crew_05/Processing/abm_leftseat_scenario2.csv",
+      "sha256": "3974605aedb3c782e9d690d2630518802b31766686650b4a186f18e42f269027",
+      "crew": "Crew_05",
+      "split": "validation",
+      "participant": "Crew_05_Left",
+      "primary_quality_experiment": true
+    },
+    {
+      "source_key": "Crew_06/Processing/abm_leftseat_scenario1.csv",
+      "sha256": "5715b501c3a31fa7a641eebd2933a9f087dfa7ba4a7b22902c5cbbe051ac16a9",
+      "crew": "Crew_06",
+      "split": "test",
+      "participant": "Crew_06_Left",
+      "primary_quality_experiment": true
+    },
+    {
+      "source_key": "Crew_10/Processing/abm_leftseat_scenario2.csv",
+      "sha256": "21fff8488df6eaf55237985bc1298caf7102a131bdec7c6bebf417fa35ec6d9d",
+      "crew": "Crew_10",
+      "split": "test",
+      "participant": "Crew_10_Left",
+      "primary_quality_experiment": true
+    },
+    {
+      "source_key": "Crew_01/Processing/abm_leftseat_scenario1.csv",
+      "sha256": "d281977605267e39f3d9f3f4c5f45d8c2a3d492ec228fe740f1fac1926558587",
+      "crew": "Crew_01",
+      "split": "train",
+      "participant": "Crew_01_Left",
+      "primary_quality_experiment": false
+    }
+  ],
+  "limitations": [
+    "Six left-seat people, not twelve, and only one validation crew.",
+    "Crew_06 uses scenario 1 while primary others use scenario 2.",
+    "Short pilot-simulator records do not establish long-duration personal baseline or astronaut generalization.",
+    "Annotations describe author detector usability, not medical ground truth."
+  ]
+}

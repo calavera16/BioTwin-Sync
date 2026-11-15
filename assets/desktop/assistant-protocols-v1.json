@@ -1,0 +1,224 @@
+{
+  "format": "biotwin-assistant-protocols",
+  "version": 1,
+  "library_version": "2026-11-14-v1",
+  "clinical_review_status": "not_clinician_reviewed",
+  "disclaimer": "Educational prototype; not clinician reviewed. Terrestrial source guidance is not validated for space. No diagnosis, treatment or readiness clearance.",
+  "urgent_help": "Alert the onboard medical officer / crew now and use the established emergency procedure. Do not wait for the simulated Earth link. For an actual desktop emergency, seek local emergency assistance now. This mission routing is a project adaptation, not a NASA-approved protocol.",
+  "sources": [
+    {
+      "id": "nasa-context",
+      "title": "NASA remote health monitoring research",
+      "url": "https://www.nasa.gov/hrp/researchers-apply-now-with-your-ideas-to-advance-remote-health-monitoring-in-space/",
+      "role": "mission motivation only",
+      "reviewed_at": null,
+      "review_due": null,
+      "review_overdue_on_access": false,
+      "summary": "Remote health monitoring motivates this project; NASA context does not validate its symptom guidance.",
+      "accessed_at": "2026-11-14",
+      "clinical_review_status": "not_clinician_reviewed"
+    },
+    {
+      "id": "nhs-headache",
+      "title": "NHS Headaches",
+      "url": "https://www.nhs.uk/symptoms/headaches/",
+      "role": "terrestrial symptom background",
+      "reviewed_at": "2024-04-17",
+      "review_due": "2027-04-17",
+      "review_overdue_on_access": false,
+      "summary": "Warning examples inform the questions; the screen is not exhaustive. Record the pattern and seek medical review for concerning or recurring symptoms.",
+      "accessed_at": "2026-11-14",
+      "clinical_review_status": "not_clinician_reviewed"
+    },
+    {
+      "id": "nhs-breathing",
+      "title": "NHS Shortness of breath",
+      "url": "https://www.nhs.uk/symptoms/shortness-of-breath/",
+      "role": "terrestrial urgent symptom background",
+      "reviewed_at": "2024-01-30",
+      "review_due": "2027-01-30",
+      "review_overdue_on_access": false,
+      "summary": "Severe breathing symptoms and accompanying chest or awareness changes need urgent help.",
+      "accessed_at": "2026-11-14",
+      "clinical_review_status": "not_clinician_reviewed"
+    },
+    {
+      "id": "nhs-fatigue",
+      "title": "NHS Tiredness and fatigue",
+      "url": "https://www.nhs.uk/symptoms/tiredness-and-fatigue/",
+      "role": "terrestrial symptom background; review due passed",
+      "reviewed_at": "2023-06-02",
+      "review_due": "2026-06-02",
+      "review_overdue_on_access": true,
+      "summary": "Persistent or unexplained fatigue and effects on daily life warrant clinical review; record sleep context.",
+      "accessed_at": "2026-11-14",
+      "clinical_review_status": "not_clinician_reviewed"
+    },
+    {
+      "id": "fda-oximeter",
+      "title": "FDA Pulse Oximeter Basics",
+      "url": "https://www.fda.gov/consumers/consumer-updates/pulse-oximeter-basics",
+      "role": "external-device measurement background",
+      "reviewed_at": null,
+      "review_due": null,
+      "review_overdue_on_access": false,
+      "summary": "Consider symptoms alongside readings. Accuracy can vary, including with skin pigmentation. This demo has no connected oximeter.",
+      "accessed_at": "2026-11-14",
+      "clinical_review_status": "not_clinician_reviewed"
+    }
+  ],
+  "protocols": [
+    {
+      "id": "headache",
+      "title": "Headache",
+      "questions": [
+        {
+          "id": "shared_urgent",
+          "text": "Severe trouble breathing, chest tightness/heaviness or pain spreading to arm/back/neck/jaw, blue/grey/very pale appearance, or sudden confusion?",
+          "kind": "urgent",
+          "source_ids": [
+            "nhs-breathing"
+          ]
+        },
+        {
+          "id": "headache_urgent",
+          "text": "Abrupt extreme headache; new weakness, speech/balance change, confusion/drowsiness, seizure or lost vision; recent head injury; or very high temperature, stiff neck, marked light sensitivity, or concerning rash?",
+          "kind": "urgent",
+          "source_ids": [
+            "nhs-headache"
+          ]
+        },
+        {
+          "id": "headache_contact",
+          "text": "Vision/eye problems, vomiting, pain worse with exertion, jaw/scalp symptoms, or headache persisting, worsening or recurring?",
+          "kind": "contact",
+          "source_ids": [
+            "nhs-headache"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "headache-diary",
+          "text": "Record headache timing, changes and associated symptoms in a diary for medical review.",
+          "source_ids": [
+            "nhs-headache"
+          ],
+          "tool": null
+        },
+        {
+          "id": "screen-break",
+          "text": "Reduce prolonged screen strain where feasible; record what changed.",
+          "source_ids": [
+            "nhs-headache"
+          ],
+          "tool": null
+        }
+      ]
+    },
+    {
+      "id": "tiredness",
+      "title": "Tiredness / poor sleep",
+      "questions": [
+        {
+          "id": "shared_urgent",
+          "text": "Severe trouble breathing, chest tightness/heaviness or pain spreading to arm/back/neck/jaw, blue/grey/very pale appearance, or sudden confusion?",
+          "kind": "urgent",
+          "source_ids": [
+            "nhs-breathing"
+          ]
+        },
+        {
+          "id": "fatigue_contact",
+          "text": "Is tiredness unexplained or persistent, affecting daily tasks, or accompanied by other symptoms?",
+          "kind": "contact",
+          "source_ids": [
+            "nhs-fatigue"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "sleep-context",
+          "text": "Record sleep timing, duration and disruptions as a diary, not inferred sleep stages.",
+          "source_ids": [
+            "nhs-fatigue"
+          ],
+          "tool": "manual"
+        },
+        {
+          "id": "sleep-environment",
+          "text": "Record whether a consistent sleep schedule and a quieter sleep setting are feasible.",
+          "source_ids": [
+            "nhs-fatigue"
+          ],
+          "tool": null
+        },
+        {
+          "id": "optional-reaction",
+          "text": "If useful, record the optional laptop reaction check as task evidence only; it cannot explain fatigue or establish fitness.",
+          "source_ids": [
+            "nhs-fatigue"
+          ],
+          "tool": "reaction"
+        }
+      ]
+    },
+    {
+      "id": "measurement",
+      "title": "Questionable measurement",
+      "questions": [
+        {
+          "id": "shared_urgent",
+          "text": "Severe trouble breathing, chest tightness/heaviness or pain spreading to arm/back/neck/jaw, blue/grey/very pale appearance, or sudden confusion?",
+          "kind": "urgent",
+          "source_ids": [
+            "nhs-breathing"
+          ]
+        },
+        {
+          "id": "reading_symptoms",
+          "text": "Does the reading itself concern you, or are symptoms concerning or worsening?",
+          "kind": "contact",
+          "source_ids": [
+            "fda-oximeter"
+          ]
+        },
+        {
+          "id": "device_available",
+          "text": "Is an external measurement device available, with its instructions?",
+          "kind": "context",
+          "source_ids": [
+            "fda-oximeter"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "record-availability",
+          "text": "Record unavailable when there is no device; never invent a reading. Otherwise record device, acquisition time and symptoms.",
+          "source_ids": [
+            "fda-oximeter"
+          ],
+          "tool": "manual"
+        },
+        {
+          "id": "repeat-reading",
+          "text": "For an available external oximeter, follow its instructions, keep movement low and wait for a stable display; record a repeat for review.",
+          "source_ids": [
+            "fda-oximeter"
+          ],
+          "tool": "manual"
+        },
+        {
+          "id": "signal-review",
+          "text": "If a source waveform exists, open technical signal review and record a recheck request; model scores never determine clinical urgency.",
+          "source_ids": [
+            "fda-oximeter"
+          ],
+          "tool": "signal"
+        }
+      ]
+    }
+  ]
+}

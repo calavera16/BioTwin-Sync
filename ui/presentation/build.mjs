@@ -1,0 +1,20 @@
+import {build} from 'esbuild';
+import {readFile, writeFile, mkdir, realpath} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+import {createHash} from 'node:crypto';
+const here=path.dirname(fileURLToPath(import.meta.url));
+const repo=await realpath(path.resolve(here,'../..'));
+const target=path.resolve(repo,'assets/presentation');
+if (path.relative(repo,target)!==path.join('assets','presentation')) throw Error('Unsafe asset target');
+await mkdir(target,{recursive:true});
+if(await realpath(target)!==target) throw Error('Linked asset target');
+await build({entryPoints:[path.join(here,'src/app.jsx')],bundle:true,minify:true,legalComments:'none',outfile:path.join(target,'app.js'),jsx:'automatic',define:{'process.env.NODE_ENV':'"production"'},target:['es2022']});
+await writeFile(path.join(target,'index.html'),'<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>BioTwin Sync | Mission health workspace</title><link rel="stylesheet" href="/app.css"></head><body><div id="root"></div><script src="/app.js" defer></script></body></html>\n');
+let notice='BioTwin Sync mission health workspace\nReact / ReactDOM / scheduler runtime licenses follow.\n\n';
+for(const name of ['react','react-dom','scheduler']) notice+=`--- ${name} ---\n`+await readFile(path.join(here,'node_modules',name,'LICENSE'),'utf8')+'\n';
+await writeFile(path.join(target,'THIRD-PARTY-NOTICES.txt'),notice);
+const files=[];
+for(const file of ['index.html','app.js','app.css','THIRD-PARTY-NOTICES.txt']) {const bytes=await readFile(path.join(target,file));if(bytes.length>3000000)throw Error('Asset too large');files.push({file,bytes:bytes.length,sha256:createHash('sha256').update(bytes).digest('hex')});}
+await writeFile(path.join(target,'manifest.json'),JSON.stringify({format:'biotwin-presentation-assets',version:1,files},null,2)+'\n');
+console.log('Built '+target+' ('+files.reduce((a,f)=>a+f.bytes,0)+' bytes)');
